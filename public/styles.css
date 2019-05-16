@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  body {
+      background-color: #eaeaea;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Crimson Text', serif;
+  }
+
+  h4, h5, h6, p {
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  h1 {
+    font-size: 2em;
+    color: #1f5858;
+    margin: 10px;
+    font-weight: 700;
+    line-height: 1em;
+  }
+  h2 {
+    font-size: 1.75em;
+    color: #1f5858;
+    margin: 10px;
+    font-weight: 700;
+    line-height: 1em;
+  }
+  h3 {
+    font-size: 1.5em;
+    color: #1f5858;
+    margin: 10px;
+    font-weight: 600;
+  }
+  h4 {
+    font-size: 1.25em;
+    color: #2d7e7e;
+    margin: 10px;
+    font-weight: 700;
+  }
+  h5 {
+    font-size: 1.0em;
+    color: #a0a0a0;
+    margin: 10px;
+    font-weight: 600;
+  }
+
+  h6 {
+    font-size: 1.0em;
+    color: #2d7e7e;
+    margin: 10px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1em;
+    color: #a5a5a5;
+    margin: 10px;
+    font-weight: 400;
+  }
+
+  
+  
+  #nav-container {
+    width: 100%;
+    z-index: 2;
+    background-color: #3e8989;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  #logo-container {
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: left;
+    align-content: center;
+    /* margin-top: 15px; */
+  }
+  
+  #logo-container > img {
+    width: 85px;
+    margin-left: 20px;
+    margin-top: 7.5px;
+  
+  }
+  
+  #links-container {
+    display: flex;
+    align-content: flex-end;
+    flex-grow: 4;
+    justify-content: flex-end;
+    overflow: hidden;
+  }
+
+  #information-container {
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      margin: auto;
+  }
+  #location-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-content: center;
+    width: 75%;
+  }
+  .location-card {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      padding: 20px;
+      margin: 10px;
+  }
+
+  .places-action-container {
+      display: flex;
+      flex-direction: row;
+      flex: 100%;
+      height: 200px;
+      padding: 10px;
+      justify-content: flex-end;
+  }
+
+  .poi-action-container {
+    display: flex;
+    flex-direction: row;
+    order: 0;
+    flex-basis: 100%;
+    justify-content: flex-end;
+  }
+
+i{
+    color: rgb(196, 196, 196);
+    margin-left: 15px;
+}
+
+  .poi-card {
+    background-color: #efefef;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .poi-card img {
+      width: 300px;
+  }
+
+  .poi-info-container {
+      margin-left: 40px;
+  }
+
+  .all-other-info {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .edit-poi-container {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      width: 400px;
+  }
+
+  .hidden {
+      display: none;
+  }
