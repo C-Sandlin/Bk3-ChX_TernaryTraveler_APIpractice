@@ -1,0 +1,61 @@
+{
+    "places": [
+        {
+            "id": 1,
+            "name": "Italy",
+            "visa_required": false
+        },
+        {
+            "id": 2,
+            "name": "Switzerland",
+            "visa_required": true
+        },
+        {
+            "id": 3,
+            "name": "France",
+            "visa_required": false
+        }
+    ],
+    "interests": [
+        {
+            "placeId": 3,
+            "name": "the riviera",
+            "description": "it's a river",
+            "cost": "450.59",
+            "review": "it's pretty cool",
+            "visited": "true",
+            "url": "https://images.pexels.com/photos/2082103/pexels-photo-2082103.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "id": 1
+        },
+        {
+            "placeId": 1,
+            "name": "Venicci Circle",
+            "description": "The center of Venicci, with shopping and food",
+            "cost": "42.78",
+            "review": "Beautiful public area with a historic fountain. The tiney cafes are perfect for getting coffe in the morning and the shops that surround this gorgeous walkable area do not disappoint",
+            "visited": "true",
+            "url": "https://images.pexels.com/photos/804954/pexels-photo-804954.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "id": 2
+        },
+        {
+            "placeId": 2,
+            "name": "Chocolate Factory",
+            "description": "They make chocolate there",
+            "cost": "300.74",
+            "review": "Loveliest chocolate in the world",
+            "url": "https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "visited": "false",
+            "id": 3
+        },
+        {
+            "placeId": 1,
+            "name": "Seceda 2500m",
+            "description": "Hike to the top of the world!",
+            "cost": "20.00 for Parking",
+            "review": "One of the best hikes",
+            "url": "https://images.pexels.com/photos/238622/pexels-photo-238622.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "visited": "false",
+            "id": 4
+        }
+    ]
+}

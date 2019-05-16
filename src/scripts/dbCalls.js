@@ -1,5 +1,15 @@
 const baseURL = "http://localhost:8088/";
 const dbCalls = {
+    addNewDestination: function (obj) {
+        return fetch(`${baseURL}places`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(obj)
+        })
+            .then(response => response.json())
+    },
     getPlaces: function () {
         return fetch(`${baseURL}places?_embed=interests`)
             .then(response => response.json())
@@ -24,6 +34,16 @@ const dbCalls = {
             headers: {
                 "Content-Type": "application/json"
             }
+        })
+            .then(response => response.json())
+    },
+    addNewInterest: function (obj) {
+        return fetch(`${baseURL}interests`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(obj)
         })
             .then(response => response.json())
     },

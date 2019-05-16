@@ -7,6 +7,7 @@ const poi = {
         poiContainer.innerHTML += `
             <div id="poi-container--${interest.id}" class="poi-card">
             <div class="poi-action-container">
+                <i class="fas fa-plus add-poi-btn" id="add-poi-btn--${interest.id}"></i>
                 <i class="fas fa-pen edit-interest-btn" id="interest-edit-btn--${interest.id}"></i>
                 <i class="far fa-times-circle delete-interest-btn" id="interest-delete-btn--${interest.id}"></i>
             </div>
