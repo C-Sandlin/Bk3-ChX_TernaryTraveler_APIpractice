@@ -1,8 +1,17 @@
+
+
+/* Color Theme Swatches in Hex */
+.wilderness-landscape-forest-with-pine-trees-and-moss-on-rocks-1-hex { color: #202426; }
+.wilderness-landscape-forest-with-pine-trees-and-moss-on-rocks-2-hex { color: #6C733D; }
+.wilderness-landscape-forest-with-pine-trees-and-moss-on-rocks-3-hex { color: #9DA65D; }
+.wilderness-landscape-forest-with-pine-trees-and-moss-on-rocks-4-hex { color: #8C8C88; }
+.wilderness-landscape-forest-with-pine-trees-and-moss-on-rocks-5-hex { color: #F2F2F2; }
+
+
 * {
     margin: 0;
     padding: 0;
   }
-
 
   body {
       background-color: #eaeaea;
@@ -12,7 +21,7 @@
     font-family: 'Crimson Text', serif;
   }
 
-  h4, h5, h6, p {
+  h4, h5, h6, p, a {
     font-family: 'Work Sans', sans-serif;
   }
 
@@ -63,7 +72,7 @@
     font-weight: 400;
   }
 
-  
+
   
   #nav-container {
     width: 100%;
@@ -98,6 +107,14 @@
     overflow: hidden;
   }
 
+  #links-container a {
+      text-decoration: none;
+      color: white;
+      margin-right: 40px;
+      align-self: center;
+      justify-self: center;
+  }
+
   #information-container {
       display: flex;
       flex-direction: column;
@@ -117,6 +134,7 @@
       background-color: white;
       padding: 20px;
       margin: 10px;
+      margin-top: 50px;
   }
 
   .places-action-container {
@@ -126,6 +144,11 @@
       height: 200px;
       padding: 10px;
       justify-content: flex-end;
+  }
+
+
+  .places-action-container p {
+      display: inline;
   }
 
   .poi-action-container {
@@ -139,6 +162,8 @@
 i{
     color: rgb(196, 196, 196);
     margin-left: 15px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1em;
 }
 
   .poi-card {
@@ -167,6 +192,11 @@ i{
       flex-direction: column;
       margin: auto;
       width: 400px;
+  }
+
+  #logo-container img {
+      height: 80px;
+      width: auto;
   }
 
   .hidden {

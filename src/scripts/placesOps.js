@@ -8,6 +8,7 @@ const placesOps = {
         informationContainer.innerHTML += `
             <div id="location-container--${place.id}" class="location-card">
             <div class="places-action-container">
+                <i class="fas fa-plus add-location-btn" id="add-location-btn--${place.id}"></i>
                 <i class="fas fa-pen edit-location-btn" id="location-edit-btn--${place.id}"></i>
                 <i class="far fa-times-circle delete-location-btn" id="location-delete-btn--${place.id}"></i>
             </div>
@@ -63,7 +64,7 @@ const placesOps = {
     createEditedDestinationObj: function (placeId) {
         const locationId = document.querySelector("#locationId");
         const name = document.querySelector("#locationName");
-        const visa = document.querySelector("input[name='visa']") === "true";
+        const visa = document.querySelector("input[name='visa']");
         const visa1 = document.querySelector("#visaReqs-true");
         const visa2 = document.querySelector("#visaReqs-false");
 

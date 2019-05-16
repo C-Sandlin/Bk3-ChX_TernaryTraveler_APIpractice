@@ -10,6 +10,9 @@ const infoContainer = document.querySelector("#information-container");
 const homeLink = document.querySelector("#home-link");
 const mainDiv = document.querySelector("#mainDiv");
 
+console.log("NEED TO ADD BUTTON TO ADD NEW DESTINATION, NEED BUTTON TO ADD NEW POI.");
+console.log("NEED TO CREATE LANDING PAGE WITH FULL IMAGE AND FLOATING TEXT");
+console.log("INCORPORATE MODALS INTO DESIGN");
 
 // LOAD ALL DESTINATIONS ON PAGE LOAD //
 homeLink.addEventListener("click", (e) => {
@@ -23,16 +26,35 @@ function renderAllThingsToDom() {
     infoContainer.innerHTML = "";
     dbCalls.getPlaces()
         .then(places => {
-            const placesArray = places;
-            placesArray.forEach(place => {
-                placesOps.renderPlaces(place);
-                place.interests.forEach(interest => {
-                    const destination = interest.placeId;
-                    poiOps.renderPOI(interest, destination);
+            Promise.all(places)
+                .then(places => {
+                    const placesArray = places;
+                    placesArray.forEach(place => {
+                        placesOps.renderPlaces(place);
+                        place.interests.forEach(interest => {
+                            const destination = interest.placeId;
+                            poiOps.renderPOI(interest, destination);
+                        })
+                    })
                 })
-            })
         })
 };
+
+// PULL UP ADD NEW DESTINATION FORM//
+infoContainer.addEventListener("click", () => {
+    if (event.target.classList.contains("add-location-btn")) {
+        placesOps.placesForm();
+    }
+})
+
+// SUBMIT NEW DESTINATION //
+infoContainer.addEventListener("click", () => {
+    if (event.target.id === "new-destination-submit") {
+        const obj = placesOps.createEditedDestinationObj();
+        dbCalls.addNewDestination(obj);
+        renderAllThingsToDom();
+    }
+})
 
 // POPULATE EDIT DESTINATION FORM //
 infoContainer.addEventListener("click", (e) => {
@@ -113,3 +135,19 @@ infoContainer.addEventListener("click", (e) => {
         }
     }
 });
+
+// PULL UP ADD NEW POI FORM//
+infoContainer.addEventListener("click", () => {
+    if (event.target.classList.contains("add-poi-btn")) {
+        poiOps.poiForm();
+    }
+})
+
+// SUBMIT NEW POI //
+infoContainer.addEventListener("click", () => {
+    if (event.target.id === "new-poi-submit") {
+        const obj = poiOps.createEditedPOIObj();
+        dbCalls.addNewInterest(obj)
+        renderAllThingsToDom();
+    }
+})
