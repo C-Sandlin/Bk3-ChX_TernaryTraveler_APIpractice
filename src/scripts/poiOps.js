@@ -5,22 +5,21 @@ const poi = {
     renderPOI: function (interest, parentId) {
         const poiContainer = document.querySelector(`#all-poi-container-${parentId}`);
         poiContainer.innerHTML += `
-            <div id="poi-container--${interest.id}" class="poi-card">
-            <div class="poi-action-container">
-                <i class="fas fa-plus add-poi-btn" id="add-poi-btn--${interest.id}"></i>
-                <i class="fas fa-pen edit-interest-btn" id="interest-edit-btn--${interest.id}"></i>
-                <i class="far fa-times-circle delete-interest-btn" id="interest-delete-btn--${interest.id}"></i>
-            </div>
+        <div id="poi-container--${interest.id}" class="poi-card">
             <div class="all-other-info">
                 <div class="poi-img-container">
                     <img class="poi-image" src="${interest.url}">
                 </div>
                 <div class="poi-info-container">
                     <h4>${interest.name}</h4>
-                    <p class="poi-cost">$${interest.cost}</p>
-                    <p class="poi-desc">${interest.description}</p>
-                    <p class="poi-review">${interest.review}</p>
+                    <h6 class="poi-cost">$${interest.cost}</h6>
+                    <p class="poi-desc">Description: ${interest.description}</p>
+                    <p class="poi-review">Review: ${interest.review}</p>
                 </div>
+            </div>
+            <div class="poi-action-container">
+                <i class="fas fa-pen edit-interest-btn" id="interest-edit-btn--${interest.id}"></i>
+                <i class="far fa-times-circle delete-interest-btn" id="interest-delete-btn--${interest.id}"></i>
             </div>
         </div>
         `
@@ -29,6 +28,7 @@ const poi = {
         const informationContainer = document.querySelector("#information-container");
         informationContainer.innerHTML = `
         <div class="edit-poi-container">
+            <h2 id="poiForm-title" style="text-align: center">Point of Interest</h2>
             <input type="text" id="poiId2" class="hidden" placeholder="" value="">
             <select id="placeId-dropdown">
             </select>
@@ -60,6 +60,7 @@ const poi = {
         const poiDesc = document.querySelector("#poiDesc");
         const poiURL = document.querySelector("#poiURL");
         const poiReview = document.querySelector("#poiReview");
+
 
         //good to go
         const submitBtn = document.querySelector("#new-poi-submit");

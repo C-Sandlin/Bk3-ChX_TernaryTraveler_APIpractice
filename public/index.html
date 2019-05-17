@@ -4,32 +4,61 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Browserify Boilerplate</title>
+    <title>The Ternary Traveler</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <nav id="nav-container">
         <div id="logo-container">
-            <img src="https://i.ibb.co/1fCN90y/Ternary-Traveler-01.png" alt="Ternary-Traveler-01" border="0">
+            <img src="https://i.ibb.co/Hx7TxsG/Ternary-Traveler-01.png" alt="Ternary-Traveler-01" border="0"
+                id="background">
         </div>
         <div id="links-container">
-            <a href="#" id="home-link">HOME</a>
-            <a href="#">LINK 2</a>
-            <a href="#">LINK 3</a>
+            <a href="#" id="home-link">All Destinations</a>
+            <a href="#">About Me</a>
+            <a href="#">Search</a>
         </div>
     </nav>
 
     <div id="mainDiv">
-        <!-- <div id="landing-container">
+        <div id="landing-container">
             <h1>The Ternary Traveler</h1>
-        </div> -->
+            <p>Three destinations a month - a week in each place</p>
+            <div id="clickDown-container">
+                <p class="clickDown" id="clickDown-info">Click to View All Destinations</p>
+                <i id="clickDown" class="fas fa-chevron-down clickDown"></i>
+            </div>
+
+        </div>
         <div id="information-container">
         </div>
     </div>
+    <nav id="footer">
+        <div id="footer-logo-container">
+            <img src="https://i.ibb.co/Hx7TxsG/Ternary-Traveler-01.png" alt="Ternary-Traveler-01" border="0"
+                id="background">
+        </div>
+        <div id="footer-links-1">
+            <a href="#">All Destinations</a>
+            <a href="#">Italy</a>
+            <a href="#">Switzerland</a>
+            <a href="#">France</a>
+            <a href="#">Zimbabwe</a>
+        </div>
+        <div id="footer-links-2">
+            <a href="#">More Information</a>
+            <a href="#">About Me</a>
+            <a href="#">My Gear</a>
+            <a href="#">Pro Tips</a>
+        </div>
+    </nav>
     <script src="bundle.js"></script>
 </body>
 

@@ -5,16 +5,23 @@ import poi from "./poiOps";
 const placesOps = {
     renderPlaces: function (place) {
         const informationContainer = document.querySelector("#information-container");
+
+        let passportStatus;
+
+        if (place.visa_required == "true") {
+            passportStatus = "Yes";
+        } if (place.visa_required == "false") {
+            passportStatus = "No";
+        }
         informationContainer.innerHTML += `
             <div id="location-container--${place.id}" class="location-card">
             <div class="places-action-container">
-                <i class="fas fa-plus add-location-btn" id="add-location-btn--${place.id}"></i>
                 <i class="fas fa-pen edit-location-btn" id="location-edit-btn--${place.id}"></i>
                 <i class="far fa-times-circle delete-location-btn" id="location-delete-btn--${place.id}"></i>
             </div>
             <div id="info-container">
                 <h2>${place.name}</h2>
-                <p class="visa-req">Visa required: ${place.visa_required}</p>
+                <p class="visa-req">Visa required: ${passportStatus}</p>
                 <div class="all-poi-container" id="all-poi-container-${place.id}">
                 </div>
             </div>
@@ -26,11 +33,13 @@ const placesOps = {
         informationContainer.innerHTML = `
         <div class="edit-container">
             <input type="text" id="locationId" class="hidden" placeholder="">
-            <p>Destination:</p>
-            <input type="text" id="locationName" class="" placeholder="Enter a Location Name">
-            <p>Visa Required:</p>
-            <input type="radio" id="visaReqs-true" class="" value="true" name="visa" label="True">True
-            <input type="radio" id="visaReqs-false" class="" value="false" name="visa" label="False">False
+            <label>Destination:</label>
+            <input name="locaysh" type="text" id="locationName" class="" placeholder="Enter a Location Name">
+            <label for="locaysh">Visa Required:</label>
+            <label for="visa">True</label>
+            <input type="radio" id="visaReqs-true" class="" value="true" name="visa" label="True">
+            <label for="visa">False</label>
+            <input type="radio" id="visaReqs-false" class="" value="false" name="visa" label="False">
             <br>
             <input id="new-destination-submit" type="submit" value="Submit">
         </div>
