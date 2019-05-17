@@ -1,61 +1,107 @@
 {
-    "places": [
-        {
-            "id": 1,
-            "name": "Italy",
-            "visa_required": false
-        },
-        {
-            "id": 2,
-            "name": "Switzerland",
-            "visa_required": true
-        },
-        {
-            "id": 3,
-            "name": "France",
-            "visa_required": false
-        }
-    ],
-    "interests": [
-        {
-            "placeId": 3,
-            "name": "the riviera",
-            "description": "it's a river",
-            "cost": "450.59",
-            "review": "it's pretty cool",
-            "visited": "true",
-            "url": "https://images.pexels.com/photos/2082103/pexels-photo-2082103.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-            "id": 1
-        },
-        {
-            "placeId": 1,
-            "name": "Venicci Circle",
-            "description": "The center of Venicci, with shopping and food",
-            "cost": "42.78",
-            "review": "Beautiful public area with a historic fountain. The tiney cafes are perfect for getting coffe in the morning and the shops that surround this gorgeous walkable area do not disappoint",
-            "visited": "true",
-            "url": "https://images.pexels.com/photos/804954/pexels-photo-804954.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-            "id": 2
-        },
-        {
-            "placeId": 2,
-            "name": "Chocolate Factory",
-            "description": "They make chocolate there",
-            "cost": "300.74",
-            "review": "Loveliest chocolate in the world",
-            "url": "https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-            "visited": "false",
-            "id": 3
-        },
-        {
-            "placeId": 1,
-            "name": "Seceda 2500m",
-            "description": "Hike to the top of the world!",
-            "cost": "20.00 for Parking",
-            "review": "One of the best hikes",
-            "url": "https://images.pexels.com/photos/238622/pexels-photo-238622.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-            "visited": "false",
-            "id": 4
-        }
-    ]
+  "places": [
+    {
+      "id": 1,
+      "name": "Italy",
+      "visa_required": "false"
+    },
+    {
+      "id": 2,
+      "name": "Switzerland",
+      "visa_required": "true"
+    },
+    {
+      "id": 3,
+      "name": "France",
+      "visa_required": "false"
+    },
+    {
+      "id": 4,
+      "name": "Zimbabwe",
+      "visa_required": "true"
+    },
+    {
+      "id": 5,
+      "name": "Morrocco",
+      "visa_required": "true"
+    }
+  ],
+  "interests": [
+    {
+      "placeId": 3,
+      "name": "The Riviera",
+      "description": "it's a river",
+      "cost": "450.59",
+      "review": "it's pretty cool",
+      "visited": "true",
+      "url": "https://images.pexels.com/photos/2082103/pexels-photo-2082103.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "id": 1
+    },
+    {
+      "placeId": 1,
+      "name": "Venicci Circle",
+      "description": "The center of Venicci, with shopping and food",
+      "cost": "42.78",
+      "review": "Beautiful public area with a historic fountain. The tiney cafes are perfect for getting coffe in the morning and the shops that surround this gorgeous walkable area do not disappoint",
+      "visited": "true",
+      "url": "https://images.pexels.com/photos/804954/pexels-photo-804954.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "id": 2
+    },
+    {
+      "placeId": 2,
+      "name": "Chocolate Factory",
+      "description": "They make chocolate there",
+      "cost": "300.74",
+      "review": "Loveliest chocolate in the world",
+      "url": "https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "visited": "false",
+      "id": 3
+    },
+    {
+      "placeId": 1,
+      "name": "Seceda 2500m",
+      "description": "Hike to the top of the world!",
+      "cost": "20.00 for Parking",
+      "review": "One of the best hikes",
+      "url": "https://static1.squarespace.com/static/59bd79e259cc686ce90a7e59/5c09c5a44ae2370de4fcfa83/5c09c5c10e2e7239f9ea8eeb/1544144333154/Seceda-3.jpg?format=2500w",
+      "visited": "false",
+      "id": 4
+    },
+    {
+      "id": 6,
+      "placeId": 4,
+      "name": "Gorilla Safari",
+      "description": "Jeep tour through conservation area - 6 hrs long",
+      "cost": "400",
+      "review": "If you are nervous about booking such an expensive trip, please be advised that you will have absolutely no issues with Gorilla Tours. If you can afford it time and money wise, book the extra gorilla day. You will want to see 2 different families as they are all different in behaviour and appearances!",
+      "url": "https://images.pexels.com/photos/1238277/pexels-photo-1238277.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+    },
+    {
+      "id": 7,
+      "placeId": 5,
+      "name": "Marrakech Market",
+      "description": "A market for persian rugs, wooden bowls, spices, and ",
+      "cost": ": Personal Preference",
+      "review": "This restaurant/ bar is a true find. Located just meters off Djema el Fna square it has an ambience and elegance not previously found on the square. Having just opened in December 2011 the service is superb and vibrant.",
+      "url": "https://images.pexels.com/photos/943533/pexels-photo-943533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+    {
+      "id": 8,
+      "placeId": 1,
+      "name": "Tre Cime Di Lavaredo",
+      "description": "National Park, UNESCO World Heritage Site",
+      "cost": "30.00 Entry Fee",
+      "review": "For the people who loves mountain and trakking this is the first place in the world. I suggest to sleep the night before and have relax in the confortable hotels. In the early morning to start the walking all around the \"3 ZINNEN\" and have lunch in the typical mountain resaurant that are not very expensive. ",
+      "url": "https://static1.squarespace.com/static/59bd79e259cc686ce90a7e59/5c09c15eb8a0451eb9160fe4/5c09c1a6f950b7546590f020/1544143282615/TreCime-17.jpg?format=2500w"
+    },
+    {
+      "id": 9,
+      "placeId": 2,
+      "name": "Hiking the Alps",
+      "description": "The best hiking and skiing in the world, hands down.",
+      "cost": "Free!",
+      "review": "The best hiking and skiing in the world, hands down. We hiked over 400 miles in 3 weeks while visiting here. You can hear the cowbells for miles.",
+      "url": "https://static1.squarespace.com/static/59bd79e259cc686ce90a7e59/5c09c5a44ae2370de4fcfa83/5c09c5d1c2241b4998a135fb/1544144351302/Seceda-8.jpg?format=2500w"
+    }
+  ]
 }

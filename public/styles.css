@@ -7,6 +7,13 @@
 .wilderness-landscape-forest-with-pine-trees-and-moss-on-rocks-4-hex { color: #8C8C88; }
 .wilderness-landscape-forest-with-pine-trees-and-moss-on-rocks-5-hex { color: #F2F2F2; }
 
+/* font-family: 'Playfair Display', serif;
+font-family: 'Ubuntu', sans-serif; */
+
+/* <link
+        href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet"> */
+
 
 * {
     margin: 0;
@@ -15,61 +22,67 @@
 
   body {
       background-color: #eaeaea;
+      min-height: 100vh;
+      display: block;
+      position: relative;
+      padding-bottom: 200px;
   }
-
+  
   h1, h2, h3 {
-    font-family: 'Crimson Text', serif;
+    font-family: 'Playfair Display', serif;
   }
 
   h4, h5, h6, p, a {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
   }
 
   h1 {
-    font-size: 2em;
-    color: #1f5858;
+    font-size: 2.5em;
+    color: #2C4985;
     margin: 10px;
     font-weight: 700;
     line-height: 1em;
   }
+
   h2 {
-    font-size: 1.75em;
-    color: #1f5858;
+    font-size: 2em;
+    color: #2C4985;
     margin: 10px;
     font-weight: 700;
     line-height: 1em;
   }
   h3 {
     font-size: 1.5em;
-    color: #1f5858;
+    color: #2C4985;
     margin: 10px;
     font-weight: 600;
   }
   h4 {
     font-size: 1.25em;
-    color: #2d7e7e;
+    color: #2C4985;
     margin: 10px;
-    font-weight: 700;
+    font-weight: 500;
   }
   h5 {
     font-size: 1.0em;
     color: #a0a0a0;
     margin: 10px;
-    font-weight: 600;
+    font-weight: 400;
   }
 
   h6 {
     font-size: 1.0em;
-    color: #2d7e7e;
+    color: #546485;
     margin: 10px;
-    font-weight: 600;
+    font-weight: 300;
   }
 
   p {
     font-size: 1em;
     color: #a5a5a5;
     margin: 10px;
-    font-weight: 400;
+    font-weight: 300;
+    line-height: 1.6em;
   }
 
 
@@ -77,11 +90,12 @@
   #nav-container {
     width: 100%;
     z-index: 2;
-    background-color: #3e8989;
-    height: 100px;
+    /* background-color: white; */
+    height: 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    /* border-bottom: 1px solid #2C4985; */
   }
   
   #logo-container {
@@ -93,9 +107,9 @@
   }
   
   #logo-container > img {
-    width: 85px;
-    margin-left: 20px;
-    margin-top: 7.5px;
+    width: 50px;
+    margin-left: 30px;
+    margin-top: 20px;
   
   }
   
@@ -108,17 +122,66 @@
   }
 
   #links-container a {
+      font-size: .8em;
       text-decoration: none;
-      color: white;
-      margin-right: 40px;
-      align-self: center;
-      justify-self: center;
+      font-weight: 300;
+      color:white;
+      margin-right: 100px;
+      margin-top: 50px;
   }
+
+  #links-container a:focus {
+    line-height: 30px;
+    border-bottom: 1px solid #232A38;
+}
+
+#landing-container {
+  margin-top: -100px;
+  background-image: url("https://static1.squarespace.com/static/59bd79e259cc686ce90a7e59/5c09c15eb8a0451eb9160fe4/5c09c75a03ce64ee3a755902/1544144753008/TreCime-7.jpg?format=2500w");
+  height: 100vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#landing-container h1{
+  color: white;
+  text-align: center;
+  padding-top: 550px;
+  font-size: 5em;
+  font-family: 'Playfair Display', serif;
+}
+
+#landing-container p{
+  color: white;
+  text-align: center;
+  font-size: 1.25em;
+  padding-top: 20px;
+}
+
+#clickDown-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-top: 250px;
+}
+
+#clickDown-container i{
+  text-align: center;
+}
+
+#clickDown-container p:last-of-type {
+  font-size: .9em;
+  padding-top: 40px;
+  color: white;
+}
 
   #information-container {
       display: flex;
       flex-direction: column;
-      width: 75%;
+      width: 85%;
       margin: auto;
   }
   #location-container {
@@ -135,6 +198,10 @@
       padding: 20px;
       margin: 10px;
       margin-top: 50px;
+  }
+
+  .location-card:last-of-type {
+    margin-bottom: 60px;
   }
 
   .places-action-container {
@@ -155,11 +222,12 @@
     display: flex;
     flex-direction: row;
     order: 0;
-    flex-basis: 100%;
+    flex-basis: 10%;
     justify-content: flex-end;
+    padding: 20px;
   }
 
-i{
+i {
     color: rgb(196, 196, 196);
     margin-left: 15px;
     font-family: 'Work Sans', sans-serif;
@@ -168,18 +236,27 @@ i{
 
   .poi-card {
     background-color: #efefef;
-    padding: 20px;
+    height: 300px;
+    /* padding: 20px; */
     margin: 10px;
+    margin-bottom: 30px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .poi-img-container {
+    height: 300px;
   }
 
   .poi-card img {
-      width: 300px;
+      height: 100%;
   }
 
   .poi-info-container {
-      margin-left: 40px;
+      margin: 20px 20px 20px 40px;
+      flex: 3;
+
   }
 
   .all-other-info {
@@ -194,11 +271,187 @@ i{
       width: 400px;
   }
 
-  #logo-container img {
-      height: 80px;
-      width: auto;
-  }
 
-  .hidden {
-      display: none;
-  }
+
+#footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:200px;   /* Height of the footer */
+  background:#2C4985;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+#footer img {
+  height: 80px;
+  margin-top: 60%;
+}
+
+#footer a:first-of-type {
+  border-bottom: 1px solid;
+  font-weight: 700;
+  text-align: left;
+  color: rgb(103, 128, 177);
+}
+
+#footer a {
+  font-size: .8em;
+  padding: 3px;
+  margin-left: none;
+  text-align: left;
+  color: rgb(103, 128, 177);
+  text-decoration: none;
+}
+
+#footer-links-1, #footer-links-2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  margin-left: 150px;
+
+}
+
+#add-buttons-container {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  justify-content: center;
+  align-content: center;
+}
+
+#add-buttons-container button {
+  padding: 10px;
+  margin: 20px;
+}
+
+button {
+  padding: 20px;
+  background-color: transparent;
+  color: #2C4985;
+  border: 2px solid #2C4985;
+  border-radius: 10px;
+  width: 300px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+button:hover {
+  padding: 20px;
+  background-color: #2C4985;
+  color: white;
+  border: 2px solid #2C4985;
+  border-radius: 10px;
+  width: 300px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.edit-poi-container {
+  height: 800px;
+  width: 800px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.edit-poi-container input, .edit-poi-container textArea, .edit-poi-container option {
+  border:none;
+  background-image:none;
+  background-color:transparent;
+  padding: 15px;
+  margin-top: 30px;
+  width: 60%;
+  align-self: center;
+  outline: none;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 4px;
+  resize: none;
+}
+
+.edit-poi-container input:last-of-type {
+  padding: 10px;
+  background-color: transparent;
+  color: #2C4985;
+  border: 2px solid #2C4985;
+  border-radius: 10px;
+  width: 200px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.edit-poi-container select {
+  border:none;
+  background-image:none;
+  background-color:transparent;
+  /* padding: 20px; */
+  margin: 20px;
+  width: 65%;
+  align-self: center;
+  outline: none;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 4px;
+  resize: none;
+}
+
+.edit-container {
+  height: 400px;
+  width: 800px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.edit-container input, .edit-poi-container textArea, .edit-poi-container option {
+  border: none;
+  background-image:none;
+  background-color:transparent;
+  padding: 15px;
+  margin-top: 30px;
+  width: 60%;
+  align-self: center; 
+  outline: none;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 4px;
+  resize: none;
+}
+
+.edit-container input:last-of-type {
+  padding: 10px;
+  background-color: transparent;
+  color: #2C4985;
+  border: 2px solid #2C4985;
+  border-radius: 10px;
+  width: 200px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.edit-container select {
+  border:none;
+  background-image:none;
+  background-color:transparent;
+  /* padding: 20px; */
+  margin: 20px;
+  width: 65%;
+  align-self: center;
+  outline: none;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 4px;
+  resize: none;
+}
+
+.hidden {
+    display: none;
+}
